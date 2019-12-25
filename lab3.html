@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Импорт Google иконок-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Импорт шрифта Ubuntu из каталога Google-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--Импорт materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Импорт materialize.css-->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+
+    <!--Импорт стилей css-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+    <!--Информация для браузера об оптимизации для мобильных устройств-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Заголовок страницы-->
+    <title>inet 2019 Лабораторная работа №3 - Материкин В.В.</title>
+</head>
+
+<body>
+    <!--Десктопное меню-->
+    <div id="home" class="navbar-fixed scrollspy">
+        <nav class="toolbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html#home" class="brand-logo">inet-2019</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html#labs">Лабораторные работы</a>
+                        </li>
+                        <li>
+                            <a href="index.html#exam">Подготовка к экзамену</a>
+                        </li>
+                        <li>
+                            <a href="index.html#projects">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Мобильное меню-->
+    <ul class="sidenav sidenav-close" id="mobile-demo">
+        <li>
+            <a href="index.html#labs">Лабораторные работы</a>
+        </li>
+        <li>
+            <a href="index.html#exam">Подготовка к экзамену</a>
+        </li>
+        <li>
+            <a href="index.html#projects">Проекты</a>
+        </li>
+        <li>
+            <a href="#contact">Контакты</a>
+        </li>
+    </ul>
+
+    <!--Баннер-->
+    <div class="parallax-container labs">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h3 class="header center">Лабораторная работа №3</h3>
+                <div class="row center">
+                    <h5 class="header col s12 light">Настройка локальной сети передачи данных
+                    </h5>
+                </div>
+                <div class="row center">
+                    <a href="#lab" class="btn-large waves-effect waves-light green lighten-1">К содержимому</a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/lab3.jpg" alt=""></div>
+    </div>
+
+    <!--Содержимое-->
+    <div id="lab" class="section scrollspy">
+        <div class="container white">
+            <div class="row">
+                <div class="col s12 m10 offset-m1 l10 offset-l1">
+
+                    <h6 class="center-align">Вариант 6</h6>
+
+                    <div class="row"></div>
+
+                    <h5 class="center-align">Расчет адресов сетей</h5>
+
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>Параметр</th>
+                                <th>LAN A</th>
+                                <th>LAN B</th>
+                                <th>LAN C</th>
+                                <th>LAN D</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Количество узлов</td>
+                                <td>67</td>
+                                <td>13</td>
+                                <td>675</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Ближайшая сверху степень двойки</td>
+                                <td>7</td>
+                                <td>4</td>
+                                <td>10</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Маска (префикс)</td>
+                                <td>/25</td>
+                                <td>/28</td>
+                                <td>/22</td>
+                                <td>/30</td>
+                            </tr>
+                            <tr>
+                                <td>Маска (десятичн.)</td>
+                                <td>255.255.255.128</td>
+                                <td>255.255.255.240</td>
+                                <td>255.255.252.0</td>
+                                <td>255.255.255.252</td>
+                            </tr>
+                            <tr>
+                                <td>SUBNET</td>
+                                <td>192.168.0.0</td>
+                                <td>172.16.0.0</td>
+                                <td>10.10.0.0</td>
+                                <td>15.15.0.0</td>
+                            </tr>
+                            <tr>
+                                <td>HOSTMIN</td>
+                                <td>192.168.0.1</td>
+                                <td>172.16.0.1</td>
+                                <td>10.10.0.1</td>
+                                <td>15.15.0.1</td>
+                            </tr>
+                            <tr>
+                                <td>HOSTMAX</td>
+                                <td>192.168.0.126</td>
+                                <td>172.16.0.14</td>
+                                <td>10.10.3.254</td>
+                                <td>15.15.0.2</td>
+                            </tr>
+                            <tr>
+                                <td>BROADCAST</td>
+                                <td>192.168.0.127</td>
+                                <td>172.16.0.15</td>
+                                <td>10.10.3.255</td>
+                                <td>15.15.0.3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="center-align">Конфигурация устройств</h5>
+
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>Устройство</th>
+                                <th>Интерфейс</th>
+                                <th>IP-адрес</th>
+                                <th>Маска подсети</th>
+                                <th>Основной шлюз</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">Router1</td>
+                                <td>Fa0/0</td>
+                                <td>15.15.0.1</td>
+                                <td>255.255.255.252</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Fa0/1</td>
+                                <td>192.168.0.1</td>
+                                <td>255.255.255.128</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Fa1/0</td>
+                                <td>172.16.0.1</td>
+                                <td>255.255.255.240</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Router2</td>
+                                <td>Fa0/0</td>
+                                <td>15.15.0.2</td>
+                                <td>255.255.255.252</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Fa0/1</td>
+                                <td>10.10.0.1</td>
+                                <td>255.255.252.0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>PC0</td>
+                                <td>Fa0</td>
+                                <td>192.168.0.2</td>
+                                <td>255.255.255.128</td>
+                                <td>192.168.0.1</td>
+                            </tr>
+                            <tr>
+                                <td>PC1</td>
+                                <td>Fa0</td>
+                                <td>192.168.0.3</td>
+                                <td>255.255.255.128</td>
+                                <td>192.168.0.1</td>
+                            </tr>
+                            <tr>
+                                <td>PC3</td>
+                                <td>Fa0</td>
+                                <td>172.16.0.2</td>
+                                <td>255.255.255.240</td>
+                                <td>172.16.0.1</td>
+                            </tr>
+                            <tr>
+                                <td>PC4</td>
+                                <td>Fa0</td>
+                                <td>172.16.0.3</td>
+                                <td>255.255.255.240</td>
+                                <td>172.16.0.1</td>
+                            </tr>
+                            <tr>
+                                <td>PC5</td>
+                                <td>Fa0</td>
+                                <td>10.10.0.2</td>
+                                <td>255.255.252.0</td>
+                                <td>10.10.0.1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="center-align">Таблицы маршрутизации</h5>
+
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>Устройство</th>
+                                <th>Источник записи</th>
+                                <th>Сеть назначения</th>
+                                <th>Маршрут</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td rowspan="4">Router1</td>
+                                <td>S</td>
+                                <td>10.10.0.0/22</td>
+                                <td>FastEthernet0/0</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>15.15.0.0/30</td>
+                                <td>FastEthernet0/0</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>172.16.0.0/28</td>
+                                <td>FastEthernet1/0</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>192.168.0.0/25</td>
+                                <td>FastEthernet0/1</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Router2</td>
+                                <td>C</td>
+                                <td>10.10.0.0/22</td>
+                                <td>FastEthernet0/1</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>15.15.0.0/30</td>
+                                <td>FastEthernet0/0</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>172.16.0.0/28</td>
+                                <td>FastEthernet0/0</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>192.168.0.0/25</td>
+                                <td>FastEthernet0/0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="center-align">Настройка маршрутизаторов</h5>
+
+                    <p>Настройка Router1:</p>
+
+                    <pre><code class="terminal"><p>enable</p><p>configure terminal</p><p>interface fa0/1</p><p>ip address 192.168.0.1 255.255.255.128</p><p>no shutdown</p><p>exit</p><p>interface fa1/0</p><p>ip address 172.16.0.1 255.255.255.240</p><p>no shutdown</p><p>exit</p><p>interface fa0/0</p><p>ip address 15.15.0.1 255.255.255.252</p><p>no shutdown</p><p>exit</p><p>ip route 10.10.0.0 255.255.252.0 fa0/0</p><p>enable password router1</p><p>line console 0</p><p>password router1</p><p>login</p><p>exit</p><p>line vty 0 15</p><p>password router1</p><p>login</p><p>exit</p><p>service password-encryption</p><p>banner motd "Welcome to Router1"</p></code></pre>
+
+                    <p>Настройка Router2:</p>
+
+                    <pre><code class="terminal"><p>enable</p><p>configure terminal</p><p>interface fa0/1</p><p>ip address 10.10.0.1 255.255.252.0</p><p>no shutdown</p><p>exit</p><p>interface fa0/0</p><p>ip address 15.15.0.2 255.255.255.252</p><p>no shutdown</p><p>exit</p><p>ip route 192.168.0.0 255.255.255.128 fa0/0</p><p>ip route 172.16.0.0 255.255.255.240 fa0/0</p><p>enable password router2</p><p>line console 0</p><p>password router2</p><p>login</p><p>exit</p><p>line vty 0 15</p><p>password router2</p><p>login</p><p>exit</p><p>service password-encryption</p><p>banner motd "Welcome to Router2"</p></code></pre>
+
+                    <h5 class="center-align">Результаты</h5>
+
+                    <p>В результате выполнения лабораторной работы была получена следующая сеть:</p>
+
+                    <div class="row center">
+                        <img class="materialboxed" width="400" src="images/network.png">
+                    </div>
+
+                    <div class="row center">
+                        <a href="files/lab3.pkt" download="lab3.pkt"
+                            class="btn-large waves-effect waves-light red accent-3 lighten-1">Скачать файл с
+                            выполненнной работой</a>
+                        <p>Файл можно открыть в программе Cisco Packet Tracer 7.3.0</p>
+                    </div>
+
+                    <div class="row"></div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3 offset-m1">
+                    <a href="lab2.html" class="btn-small waves-effect waves-light green lighten-1">Назад</a>
+                </div>
+                <div class="col s12 m3">
+
+                </div>
+                <div class="col s12 m3 offset-l1"><a href="index.html#projects"
+                        class="btn-small waves-effect waves-light green lighten-1">Вперед</a></div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+
+    <!--Контакты-->
+    <div id="contact" class="section contacts section-follow center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Контакты</h4>
+                    <a href="https://github.com/Viska97" target="_blank" class="white-text">
+                        <i class="fab fa-github fa-4x"></i>
+                    </a>
+                    <a href="https://vk.com/materikinv" target="_blank" class="white-text">
+                        <i class="fab fa-vk fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Футер-->
+    <footer class="page-footer contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Материкин Василий Владимирович</h5>
+                    <p class="grey-text text-lighten-4">Магистрант ФГБОУ ВО МГТУ "СТАНКИН" по специальности
+                        "Информатика
+                        и вычислистельная техника". Увлекаюсь разработкой мобильных приложений.</p>
+
+
+                </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Для создания сайта использовались</h5>
+                    <ul>
+                        <li><a class="white-text" href="https://materializecss.com" target="_blank">Materialize</a>
+                        </li>
+                        <li><a class="white-text" href="https://fonts.google.com/specimen/Ubuntu" target="_blank">Ubuntu
+                                Font</a></li>
+                        <li><a class="white-text" href="https://fontawesome.com" target="_blank">Font Awesome</a>
+                        </li>
+                        <li><a class="white-text" href="https://unsplash.com" target="_blank">Unsplash</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Материкин В.В. &copy; 2019</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Инициализация JavaScript в конце для оптимизации загрузки-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/fontawesome.all.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+</body>
+
+</html>

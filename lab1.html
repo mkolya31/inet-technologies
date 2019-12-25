@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Импорт Google иконок-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Импорт шрифта Ubuntu из каталога Google-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--Импорт materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Импорт materialize.css-->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+
+    <!--Импорт стилей css-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+    <!--Информация для браузера об оптимизации для мобильных устройств-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Заголовок страницы-->
+    <title>inet 2019 Лабораторная работа №1 - Материкин В.В.</title>
+</head>
+
+<body>
+    <!--Десктопное меню-->
+    <div id="home" class="navbar-fixed scrollspy">
+        <nav class="toolbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html#home" class="brand-logo">inet-2019</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html#labs">Лабораторные работы</a>
+                        </li>
+                        <li>
+                            <a href="index.html#exam">Подготовка к экзамену</a>
+                        </li>
+                        <li>
+                            <a href="index.html#projects">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Мобильное меню-->
+    <ul class="sidenav sidenav-close" id="mobile-demo">
+        <li>
+            <a href="index.html#labs">Лабораторные работы</a>
+        </li>
+        <li>
+            <a href="index.html#exam">Подготовка к экзамену</a>
+        </li>
+        <li>
+            <a href="index.html#projects">Проекты</a>
+        </li>
+        <li>
+            <a href="#contact">Контакты</a>
+        </li>
+    </ul>
+
+    <!--Баннер-->
+    <div class="parallax-container labs">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h3 class="header center">Лабораторная работа №1</h3>
+                <div class="row center">
+                    <h5 class="header col s12 light">Экосистема разработки программ с открытым кодом
+                    </h5>
+                </div>
+                <div class="row center">
+                    <a href="#lab" class="btn-large waves-effect waves-light green lighten-1">К содержимому</a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/lab1.jpg" alt=""></div>
+    </div>
+
+    <!--Содержимое-->
+    <div id="lab" class="section scrollspy">
+        <div class="container white">
+            <div class="row">
+                <div class="col s12 m10 offset-m1 l10 offset-l1">
+
+                    <div class="row"></div>
+
+                    <h5 class="center-align">Цель лабораторной работы - создание персональной страницы-отчета на github
+                        и работа с git</h5>
+
+                    <div class="row"></div>
+
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h6>В ходе выполнения лабораторной работы были решены следующие задачи:</h6>
+                        </li>
+                        <li class="collection-item">1. Создание учетной записи на сайте
+                            github.com</li>
+                        <li class="collection-item">2. Создание проекта страницы-отчета</li>
+                        <li class="collection-item">3. Загрузка страницы-отчета в личный репозиторий на
+                            Github</li>
+                    </ul>
+
+                    <div class="row"></div>
+
+                    <h6 class="center-align">Создание учетной записи на сайте github.com</h6>
+
+                    <p>Для выполнения работы была использована уже существующая учетная запись <a style="color:#242582;"
+                            href="https://github.com/Viska97" target="_blank">
+                            Viska97</a></p>
+
+                    <div class="row"></div>
+                    <h6 class="center-align">Создание проекта страницы-отчета</h6>
+
+                    <p>Была создана папка <b>inet2019</b>, в которой располагаются файлы проекта. Проект представляет
+                        собой веб
+                        сайт, созданный с использованием технологий HTML, CSS и JavaScript. Внешний вид вложенных
+                        каталогов и файлов проекта представлен на рисунке 1.</p>
+
+                    <img class="materialboxed center-block" width="400" src="images/project-folder.png">
+
+                    <p class="center-align">Рис. 1. Файлы проекта inet2019</p>
+
+                    <p>Описание структуры проекта представлено в таблице ниже:</p>
+
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>Путь</th>
+                                <th>Назначение</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>css/materialize.min.css</td>
+                                <td>Таблица стилей фреймворка Materialize</td>
+                            </tr>
+                            <tr>
+                                <td>css/style.css</td>
+                                <td>Главная таблица стилей сайта</td>
+                            </tr>
+                            <tr>
+                                <td>images/</td>
+                                <td>Изображения, используемые на страницах сайта</td>
+                            </tr>
+                            <tr>
+                                <td>js/fontawesome.all.min.js</td>
+                                <td>JavaScript код библиотеки Font Awesome</td>
+                            </tr>
+                            <tr>
+                                <td>js/main.js</td>
+                                <td>Главный файл, содержащий JavaScript код сайта</td>
+                            </tr>
+                            <tr>
+                                <td>js/materialize.min.js</td>
+                                <td>JavaScript код фреймворка Materialize</td>
+                            </tr>
+                            <tr>
+                                <td>index.html</td>
+                                <td>Разметка главной страницы сайта</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row"></div>
+
+                    <h6 class="center-align">Загрузка страницы-отчета в личный репозиторий на
+                        Github</h6>
+
+                    <p>С помощью веб интерфейса Github был создан новый репозиторий inet-2019 (рисунок 2).</p>
+
+                    <img class="materialboxed center-block" width="400" src="images/repository-creation.png">
+
+                    <p class="center-align">Рис. 2. Создание репозитория inet-2019</p>
+
+                    <p>Затем был создан локальный Git репозиторий, файлы проекта были закоммичены в ветку master и ветка
+                        master была синхронизирована с ранее созданным удаленным репозиторием на Github:</p>
+
+                    <pre><code class="java"><p>git init</p><p>git add .</p><p>git commit -m "Initial commit"</p><p>git remote add origin "https://github.com/Viska97/inet-2019.git"</p><p>git push -u origin master</p></code></pre>
+
+                    <p>В настройках репозитория был активирован хостинг Github Pages (рисунок 3).</p>
+
+                    <img class="materialboxed center-block" width="400" src="images/pages-publish.png">
+
+                    <p class="center-align">Рис. 3. Настройка публикации на Github Pages</p>
+
+                    <p>Внесенные в репозиторий (рисунок 4) изменения были успешно опубликованы хостингом Github Pages.
+                        Опубликованную страницу-отчет можно увидеть по соотвествующему адресу (рисунок 5).</p>
+
+                    <img class="materialboxed center-block" width="400" src="images/repository.png">
+
+                    <p class="center-align">Рис. 4. Внешний вид репозитория</p>
+
+                    <img class="materialboxed center-block" width="400" src="images/landing.png">
+
+                    <p class="center-align">Рис. 5. Внешний вид персональной страницы-отчета</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3 offset-m1">
+                    <a href="index.html#labs" class="btn-small waves-effect waves-light green lighten-1">Назад</a>
+                </div>
+                <div class="col s12 m3">
+
+                </div>
+                <div class="col s12 m3 offset-l1"><a href="lab2.html"
+                        class="btn-small waves-effect waves-light green lighten-1">Вперед</a></div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+
+    <!--Контакты-->
+    <div id="contact" class="section contacts section-follow center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Контакты</h4>
+                    <a href="https://github.com/Viska97" target="_blank" class="white-text">
+                        <i class="fab fa-github fa-4x"></i>
+                    </a>
+                    <a href="https://vk.com/materikinv" target="_blank" class="white-text">
+                        <i class="fab fa-vk fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Футер-->
+    <footer class="page-footer contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Материкин Василий Владимирович</h5>
+                    <p class="grey-text text-lighten-4">Магистрант ФГБОУ ВО МГТУ "СТАНКИН" по специальности
+                        "Информатика
+                        и вычислистельная техника". Увлекаюсь разработкой мобильных приложений.</p>
+
+
+                </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Для создания сайта использовались</h5>
+                    <ul>
+                        <li><a class="white-text" href="https://materializecss.com" target="_blank">Materialize</a>
+                        </li>
+                        <li><a class="white-text" href="https://fonts.google.com/specimen/Ubuntu" target="_blank">Ubuntu
+                                Font</a></li>
+                        <li><a class="white-text" href="https://fontawesome.com" target="_blank">Font Awesome</a>
+                        </li>
+                        <li><a class="white-text" href="https://unsplash.com" target="_blank">Unsplash</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Материкин В.В. &copy; 2019</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Инициализация JavaScript в конце для оптимизации загрузки-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/fontawesome.all.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+</body>
+
+</html>

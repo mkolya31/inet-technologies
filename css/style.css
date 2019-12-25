@@ -1,0 +1,84 @@
+.toolbar{
+    background-color: #242582;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #242582;
+}
+  
+@media only screen and (max-width : 499px) {
+  .parallax img {
+    max-height: 130%;
+  }
+}
+  
+@media only screen and (min-width: 500px) {
+  .parallax img {
+    max-height: 170%;
+  }
+}
+
+.icons {
+    color: #ff1744;
+}
+
+.labels {
+    color: white
+}
+
+.banner {
+    min-height: 700px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+
+.labs {
+    min-height: 300px;
+    line-height: 0;
+    height: auto;
+    color: white
+}
+
+.exam {
+    min-height: 300px;
+    line-height: 0;
+    height: auto;
+    color: white
+}
+
+.lab-card-image {
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 95%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.projects-title {
+  width: 50%;
+}
+
+.contacts {
+    background: #282828;
+    color: white;
+}
